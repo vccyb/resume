@@ -5,4 +5,13 @@ import TimeZoneV2 from './TimeZoneCardV2'
 
 <Card colSpan="lg:col-span-2" rowSpan="md:row-span-2" title="当前时间">
   <TimeZoneV2 timezone="China/Shanghai" client:load />
+  <p>
+    距离我学习前端已经：{
+      Math.floor(
+        (new Date().getTime() - new Date('2022-08-01').getTime()) /
+          (24 * 60 * 60 * 1000),
+      )
+    } 天
+    <p>当前我正在学习：<strong>vue3源码解析</strong></p>
+  </p>
 </Card>
