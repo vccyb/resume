@@ -1,0 +1,36 @@
+---
+import Card from '../Card.astro'
+import { LINKS } from '../../lib/constants'
+---
+
+<Card colSpan="md:col-span-1" rowSpan="md:row-span-4">
+  <div class="h-full">
+    <header class="flex items-center">
+      <h1 class="text-xl font-bold text-foreground">让我们开始合作！</h1>
+    </header>
+    <address class="mt-4 flex flex-col">
+      <h2 class="text-gray-500">联系我</h2>
+      <p>13170906656@163.com</p>
+      <p>🇨🇳 深圳, 中国 🇨🇳</p>
+    </address>
+    <div class="mt-4 flex w-fit flex-col">
+      <h2 class="text-gray-500">社交媒体</h2>
+      <ul>
+        <li>
+          <a href={LINKS.github} target="_blank">Github</a>
+        </li>
+        <li>
+          <a
+            href={'https://space.bilibili.com/3616379?spm_id_from=333.1007.0.0'}
+            target="_blank">Bilibili</a
+          >
+        </li>
+        <li>
+          <a href={'https://juejin.cn/user/501033035376615'} target="_blank"
+            >掘金</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</Card>

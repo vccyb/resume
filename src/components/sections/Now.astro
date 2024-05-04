@@ -1,0 +1,22 @@
+---
+import Card from '../Card.astro'
+import Pulse from '../Pulse.astro'
+---
+
+<Card colSpan="md:col-span-1" rowSpan="md:row-span-2">
+  <div class="mb-2 flex w-full items-start justify-between">
+    <div class="flex flex-col">
+      <h2>当前</h2>
+      <a href="https://sive.rs/nowff" target="_blank">
+        <span class="cursor-pointer text-xs text-gray-500"
+          >现状我在干嘛呢？</span
+        >
+      </a>
+    </div>
+    <Pulse />
+  </div>
+  <p class="text-xs">当前我在中国深圳龙岗一家科技公司担任前端工程师</p>
+  <p class="text-xs">
+    主要工作：前端相关需求开发、前端部分基建工作、体验优化、项目组件库设计等
+  </p>
+</Card>
